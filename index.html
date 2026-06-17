@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 1인용 체스 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h2>AI CHESS TOURNAMENT</h2>
+        <div id="current-turn" class="white-turn">WHITE (YOU)</div>
+
+        <!-- 실시간 먹은 말 표시 전황판 -->
+        <div id="status-panel">
+            <div class="captured-box">
+                <span class="box-label">AI가 먹은 내 말:</span>
+                <div id="captured-by-black" class="captured-pool"></div>
+            </div>
+            <div class="captured-box">
+                <span class="box-label">내가 잡은 AI 말:</span>
+                <div id="captured-by-white" class="captured-pool"></div>
+            </div>
+        </div>
+
+        <!-- 체스 보드판 -->
+        <div id="chess-board"></div>
+
+        <button onclick="resetGame()">게임 재시작</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
